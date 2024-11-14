@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="icon" href="src/images/dice-d20-solid.svg" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="../index.html">
+                <i class="fa-solid fa-dice-d20" id="nav_logo"> M J</i>
+            </a>
+            
+            
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Depoimentos</a>
+                </li>
+            </ul>
+
+            <button class="btn-default" ><a href="https://wa.me/5561996062004?text=Ol%C3%A1%20tudo%20bem%3F%20Gostaria%20de%20Fazer%20um%20or%C3%A7amento%20sobre%20um%20produto%20digital...">Contratar</a>
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Contratar
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    <span>Otimize</span> sua <u id="marca">marca</u> conosco!!
+                </h1>
+
+                <p class="description">
+                    Transformando ideias em experiências digitais impressionantes
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="https://wa.me/5561996062004?text=Ol%C3%A1%20tudo%20bem%3F%20Gostaria%20de%20Fazer%20um%20or%C3%A7amento%20sobre%20um%20produto%20digital..." class="btn-default" id="cont"> <!--cont é um id que deixa o botão mais bonito que gira-->
+                        Contratar
+                    </a>
+
+                    <a href="tel:+5561996062004" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (61) 99606-2004
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/5561996062004?text=Ol%C3%A1%20tudo%20bem%3F%20Gostaria%20de%20Fazer%20um%20or%C3%A7amento%20sobre%20um%20produto%20digital...">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/front-end-developer.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Como podemos te Ajudar?</h2>
+            <h3 class="section-subtitle">Conheça nossos Serviços</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/landingpagemenu.png" class="dish-image" alt="" height="">
+                    <h3 class="dish-title">
+                        Landing Pages
+                    </h3>
+
+                    <span class="dish-description">
+                        Página da web projetada especificamente para converter visitantes em leads ou clientes, 
+                        focando em uma oferta específica e
+                         geralmente com uma chamada para ação clara.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(20+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>Faça seu Orçamento-></h4>
+                        <button class="btn-default"> <a href="https://wa.me/5561996062004?text=Ol%C3%A1%20tudo%20bem%3F%20Gostaria%20de%20Fazer%20um%20or%C3%A7amento%20sobre%20um%20produto%20digital..."><i class="fa-solid fa-basket-shopping"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/Logos.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Logos Profissionais
+                    </h3>
+
+                    <span class="dish-description">
+                        Símbolo gráfico que representa uma empresa, produto, ou marca de forma 
+                        distintiva e memorável.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(100+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>Faça seu Orçamento-></h4>
+                        <button class="btn-default"><a href="https://wa.me/5561996062004?text=Ol%C3%A1%20tudo%20bem%3F%20Gostaria%20de%20Fazer%20um%20or%C3%A7amento%20sobre%20um%20produto%20digital...">  <i class="fa-solid fa-basket-shopping"></i></a>
+                          
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/apresentacao.png" class="dish-image" alt="" >
+
+                    <h3 class="dish-title" id="site">
+                        Sites Institucionais
+                    </h3>
+
+                    <span class="dish-description">
+                        Um site institucional é uma página na internet que representa uma organização, 
+                        empresa ou entidade, fornecendo informações 
+                        detalhadas sobre sua missão, valores, serviços ou produtos.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(20+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>Faça seu Orçamento-></h4>
+                        <button class="btn-default"><a href="https://wa.me/5561996062004?text=Ol%C3%A1%20tudo%20bem%3F%20Gostaria%20de%20Fazer%20um%20or%C3%A7amento%20sobre%20um%20produto%20digital...">  <i class="fa-solid fa-basket-shopping"></i></a>
+                            
+                        </button>
+                    </div>
+                </div>
+                
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/Mago_Ranzina-removebg-preview.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        
+
+                        <div class="feedback-content">
+                            <p>
+                                Maria Madalena
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Contratei os seus serviços para desenvolver a minha página da minha empresa e não poderia estar mais feliz com o resultado! Você captou 
+                                perfeitamente a essência da nossa marca e 
+                                transformaram nossas ideias em algo Incrível!!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        
+
+                        <div class="feedback-content">
+                            <p>
+                                Nira Portela
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                O trabalho do Marco foi essencial para estabelecer minha 
+                                presença online como psicanalista. Ele entendeu completamente minha visão e 
+                                criou uma página que reflete minha abordagem terapêutica de maneira clara e acolhedora. 
+                                Estou muito satisfeita com o resultado final e com o suporte contínuo que recebo. 
+                                Recomendo sem hesitação!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+
+        <div id="footer_items">
+            <span id="copyright">
+                &2024 Marco Júnior
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5561996062004?text=Ol%C3%A1%20tudo%20bem%3F%20Gostaria%20de%20Fazer%20um%20or%C3%A7amento%20sobre%20um%20produto%20digital...">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

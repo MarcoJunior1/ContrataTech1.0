@@ -1,0 +1,282 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+    color: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+}
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+}
+button{
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}
+:root{
+    --main-color: #a402b9;
+
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+    max-width: 1366px;
+    margin-inline: auto;
+}
+.header_logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.nav_ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+}
+.header__icon-btn{
+    display: none;
+}
+.header__icon{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+@media (width< 668px){
+    .header__nav{
+        display: none;
+    }
+    .header__icon-btn{
+        display: block;
+    }
+    
+}
+
+body{
+    background: linear-gradient(150deg,rgb(51, 2, 83),rgb(0, 0, 0));
+}
+
+.hero{
+    padding-inline: 1.25rem;
+    display: flex;
+    padding-top: 6rem;
+    overflow: hidden;
+    max-width: 1280px;
+    margin-inline: auto;
+    
+}
+
+.hero__left{
+    flex: 1;   
+}
+
+.hero__rigth{
+    flex: 1;
+}
+.hero__up-tex{
+    color: rgb(148, 54, 156);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hero__tiltle{
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    margin-top: 0.75rem;
+
+}
+
+.hero__description{
+    font-size: 0.9rem;
+    opacity: 0.5;
+    font-weight: 300;
+    line-height: calc(1m + 0.5rem);
+    margin-block: 1.5rem;
+    max-width: 55ch;
+}
+.hero__btn{
+    font-size: 1rem;
+    background: linear-gradient(to left, purple,rgb(109, 4, 21));
+    padding: 0.5em 2em;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+}
+/*hero right*/
+.hero__img{
+    transform: rotate(5deg);
+    max-width: 580px;
+    margin-left: 9%;
+    filter: drop-shadow(0px 0px 25px purple);
+    animation: purple 1s step-start alternate  ;
+}
+@media (width < 1024px){
+    .hero{
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+.hero__tiltle{
+    max-width: 20ch;
+}
+
+.hero__img{
+    width: 90%;
+    max-width: 400px;
+    margin-inline: auto;
+}
+#imgdragao{
+    
+}
+}
+@media(width < 475px){
+    .hero__title{
+        font: size 2.5rem;
+    }
+}
+.info{
+    padding-inline: 1.25rem;
+    padding-top: 2rem;
+    overflow: hidden;
+    max-width: 1280px;
+    margin-inline: auto;
+   
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255,255,255, 0.15);
+
+}
+.item-wrapper{
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 1.5;
+    display: flex;
+    padding-inline: 1.25rem;
+}
+.item{
+    flex: 1;
+    min-width: 150px;
+}
+.item__title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+.item__description{
+    color: rgb(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    text-align: center;
+}
+.info-wrapper{
+    padding-inline: 1.25rem;
+    display: flex;
+    padding-top: 6rem;
+    overflow: hidden;
+    max-width: px;
+    margin-inline: auto;
+    
+    
+}
+
+.info__left{
+    flex: 1;
+
+}
+.info__right{
+    flex: 1;
+    align-self: center;
+    margin-right: 6px ;
+    
+    
+}
+.section__up-text{
+    color: aquamarine;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 88px;
+    font-size: 20px;
+}
+.section__title{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.section__description{
+    color: white;
+    line-height: calc(1rem + 0.7rem);
+    margin-block: 1rem;
+}
+.section__btn{
+    background: linear-gradient(to left, purple,rgb(109, 4, 21));
+    padding: 0.5em 2em;
+    border-radius: 6px;
+    color: black;
+}
+#imgdragao{
+    height: 650px;
+    filter: drop-shadow(0px 0px 25px purple);
+}
+footer {
+    filter: drop-shadow(0px 0px 25px purple);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+.menu{
+    filter: drop-shadow(0px 0px 25px purple);
+    height: 100vh;
+    background-color: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: blue;
+}

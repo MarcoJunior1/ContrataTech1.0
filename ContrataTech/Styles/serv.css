@@ -1,0 +1,109 @@
+#servicos{
+    background-color: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*.card = cada pessoa*/
+/*.content-serv-full = conteúdo escrito, nome e descrição*/
+/*.nome-serv = h4 do nome*/
+/*.content-serv = p da descrição da pessoa*/
+
+.card{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    border: 4px solid purple;
+    background-size: cover;
+    background-position: center center; 
+    transition: 0.3s ease-in-out;
+    flex-wrap: wrap;
+    max-width: 25%;
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+
+.nome-serv{
+    color:  var(--roxo);
+    font-size: 3rem;
+}
+
+.content-serv{
+    color: var(--branco);
+    font-size: 1rem;
+}
+
+.content-serv-full{
+    text-align: center;
+}
+
+
+#pessoa-1{
+    float: left;
+    height: 65rem;
+    background-repeat: no-repeat;
+    background-image: url(../Imagens/IsaFoto.jpeg);
+}
+
+#pessoa-2{
+    
+    height: 65rem;
+    background-repeat: no-repeat;
+    background-image: url(../Imagens/DanielFoto.jpeg);
+    
+}
+#pessoa-3{
+    float: left;
+    height: 65rem;
+    background-repeat: no-repeat;
+    background-image: url(../Imagens/FotoMarco.jpg);
+    
+}
+#pessoa-4{
+    
+    height: 65rem;
+    background-repeat: no-repeat;
+    background-image: url(../Imagens/SamuelFoto.jpeg);
+    
+}
+#pessoa-5{
+    float: left;
+    height: 65rem;
+    background-repeat: no-repeat;
+    background-image: url(../Imagens/CauaFoto.jpeg);
+     
+}
+
+.pessoa-foto{
+    width: 40rem;
+    border-radius: 100px;
+    height: 40rem;
+}
+
+.btn-serv{
+    background-color: var(--roxo);
+    border-radius: 50px;
+    width: 160px;
+    color: var(--branco);
+    font-size: 20px;
+    height: 2.5rem;
+    margin-top: 45rem;
+}
+
+.link-a{
+    text-decoration: none;
+    color: var(--branco);
+}
+

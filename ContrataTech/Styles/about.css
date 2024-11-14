@@ -1,0 +1,50 @@
+#about{
+    background-color: var(--pretoSecundario);
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#caixa-direita{
+    border: 2px solid var(--roxo);
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#content-p{
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px;
+    width: 500rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifa\;
+}
+
+#about{
+    height: 100rem;
+}
+
+#caixa-esquerda{
+    border: 2px solid var(--roxo);
+    width: 50rem;
+    max-width: 50rem;
+    float: left;
+    height: 50rem;
+}
+

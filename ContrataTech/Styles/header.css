@@ -1,0 +1,51 @@
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 12% 4rem;
+    background: var(--preto);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: fixed;
+    background: transparent;
+}
+
+#logo{
+    font-size: 3rem;
+    color: var(--branco);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+}
+
+#logo span{
+    text-shadow: 0 0 25px var(--roxo);
+    color: var(--roxo);
+}
+
+#nav_bar a{
+    font-size: 1.8rem;
+    color: var(--branco);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+#nav_bar a:hover,
+#nav_bar.a#active{
+    color: var(--roxo);
+    border-bottom:  3px solid var(--roxo) ;
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--branco);
+    display: none;
+}

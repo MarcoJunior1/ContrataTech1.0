@@ -1,0 +1,159 @@
+/*importando fonte poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Fim da importação da fonte*/
+
+/*Importando os Arquivos Css*/
+@import url(media/media.css);
+
+@import url(header.css);
+
+@import url(home.css);
+
+@import url(serv.css);
+
+@import url(about.css);
+
+@import url(footer.css);
+/*Fim da Importação dos arquivos css*/
+
+/*Paleta de Cores*/
+
+:root{
+    --preto : #080808;
+    --pretoSecundario: #131313;
+    --roxo : #a402b9;
+    --roxoSecundario: #6600ff;
+    --branco : #ffff;
+}
+
+/*Fim da Paleta de cores*/
+
+/*padronização do site*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden ;
+}
+
+body{
+    color: var(--branco);
+    background-color: var(--preto);
+    font-family: "Poppins";
+}
+/*fim da padronização do site*/
+
+/*scrollbar*/
+html::-webkit-scrollbar{
+    width: 15px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--roxo);
+    border-radius: 100px;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--preto);
+    
+    width: 50px;
+}
+/*fim da scrollbar*/
+
+/*Padronização das <section>*/
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+/*Fim da Padronização das <section>*/
+
+/*Estilização Padrão para botões de Redes Sociais*/
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid var(--roxoSecundario);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--roxo);
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+}
+.social-icons a:hover{
+    color: var(--branco);
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--roxoSecundario);
+    background-color: var(--roxoSecundario);
+}
+/*Fim da Estilização para btn das redes sociais*/
+
+/*estilização dos títulos*/
+
+/* From Uiverse.io by joe-watson-sbf */ 
+.btn-hv {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: var(--branco);
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 10rem;
+  }
+  
+  .btn-hv::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--roxo);
+    transition: 0.5s ease;
+  }
+  
+  .btn-hv:hover {
+    color: var(--roxoSecundario);
+    transition-delay: 0.5s;
+  }
+  
+  .btn-hv:hover::before {
+    width: 100%;
+  }
+  
+  .btn-hv::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .btn-hv:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+  
+/*fim da estilização dos títulos*/
